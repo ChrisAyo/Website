@@ -1,0 +1,25 @@
+
+
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.h-100vh {
+  min-height: calc(100vh - 48px);
+}
+
+
+.straight{
+display:flex;
+align-items: flex-end;
+
+}
+
+.bg-hero {
+  background-image: url(https://cdn0.wideopenpets.com/wp-content/uploads/2018/01/Im-a-doggo-770x405.jpg);
+} 
