@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Hello, world!</title>
+    <style>
+        .bg-image {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        element.style {
+            background-color: rgba(0, 0, 0, 1);
+
+
+        }
+    </style>
+    <!-- Font awsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body class="position-relative">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Brooklyn Film Festival</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about_us">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#showtimes">Showtimes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#news">News</a>
+                </li>
+            </ul>
+            <a class="btn btn-outline-primary" href="#reserve_section"> Pre-register</a>
+        </div>
+    </nav>
+
+    <showtimes></showtimes>
+
+    <!-- http://brooklynbridgepark.com/wp/media/2010/05/brooklyn-bridge-park.jpg -->
+    <!--Jumbo tron -->
+
+    <div class="bg-image text-light mb-0 h-100vh d-flex flex-column justify-content-center"
+        style="background-image:url(  https://static1.squarespace.com/static/59ec161180bd5ee92ad36c5a/t/5c072868c2241b2bf0e25ec7/1543972978189/Rooftop_Movies_2018_090.jpg?format=2500w) ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h1 class="display-4">Welcome to the Brooklyn Outdoor Film Festival
+                        !</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                        attention
+                        to
+                        featured content or information.</p>
+                    <hr class="my-4">
+
+
+
+                    <a class="btn btn-secondary btn-lg" href="#reserve_section" role="button">Pre-register</a>
+                    <a class="btn btn-secondary btn-lg" href="#about_us" role="button">About us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- https://natashaatlas.com/wp-content/uploads/2018/05/IMG_0539-1440x1920.jpg
+    http://brooklynbridgepark.com/wp/media/2010/05/brooklyn-bridge-park.jpg -->
+
+
+    <!-- <div class="bg-cover bg-center h-100vh bg-hero">
+    </div> -->
+    <div class="bg-cover bg-center h-100vh d-flex flex-column justify-content-center text-light"
+        style="background-image:url(https://farm4.staticflickr.com/3318/3219874303_134538d190_b.jpg)" id="about_us">
+
+        <div class=" container">
+            <div class="row">
+                <div style="    background-color: rgba(0,0,0,0.8);" class="col-md-6 offset-md-3 text-center">
+                    <h2> About Us </h2>
+                    <p>
+                        1990 we begin the journey, our first show, this was not held outdoor,it started in
+                        the film club at the university of Greenwich on a colds winters breeze. We held these functions
+                        on a
+                        monthly basis until the summer came around and it grew,with the sun more friends,
+                        students,locals
+                        joined
+                        and we decided to hold
+                        it outside, this was arranged by the art and drama students, we now have annual festivals.
+                        Thanks to
+                        support from the mayor of Brooklyn and all our sponsors.
+                        There are limited seats so ensure you book your tickets today.
+                        Looking forward to meet you!
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container py-5 h-100vh" id="showtimes">
+        <h2 class="text-center py-5"> Showtimes</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                        aria-controls="v-pills-home" aria-selected="true">5th August</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false">6th August</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                        aria-controls="v-pills-messages" aria-selected="false">7th August</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                        aria-controls="v-pills-settings" aria-selected="false">8th August</a>
+                </div>
+            </div>
+            <!-- https://rooftopfilmclub.com/wp-content/uploads/2018/03/Bussey-3-1080x650.jpg -->
+            <!--5th august-->
+            <div class="col-md-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab">
+                        <div class="card-deck flex-column flex-md-row ">
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="http://cultfiction.net/wp-content/uploads/2016/04/her-movie-poster-square-150x150.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Her</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as
+                                        a
+                                        natural
+                                        lead-in to
+                                        additional
+                                        content. This content is a little bit longer.</p>
+
+
+                                    <div class="flex-grow-1 flex-column d-flex justify-content-end">
+
+                                        <p class="card-text text-center"><small class="text-muted">6:00 -
+                                                19:30pm
+                                            </small></p>
+                                        <p class="text-center">
+                                            <a class="btn btn-secondary btn-md" href="#reserve_section"
+                                                role="button">Book
+                                                now</a>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="data:image/jpeg;base64,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"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">The Incredibles</h5>
+                                    <p class="card-text">This card has supporting text below as a natural
+                                        lead-in to
+                                        additional
+                                        content.
+                                    </p>
+
+                                    <div class="flex-grow-1 flex-column d-flex justify-content-end">
+                                        <p class=" card-text text-center"><small class="text-muted">20:00 -
+                                                21:30pm</small>
+                                        </p>
+                                        <p class="text-center">
+                                            <a class="btn btn-secondary btn-md" href="#reserve_section"
+                                                role="button">Book
+                                                now</a>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://news.toyark.com/wp-content/uploads/sites/4/2018/11/Prime-1-Dark-Knight-Rises-Batman-010-150x150.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column ">
+                                    <h5 class="card-title">The Dark Knight</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as
+                                        a
+                                        natural
+                                        lead-in to
+                                        additional
+                                        content. This card has even longer content than the first to show
+                                        that
+                                        equal
+                                        height
+                                        action.
+                                    </p>
+
+                                    <div class="flex-grow-1 flex-column d-flex justify-content-end">
+                                        <p class="card-text text-center"><small class="text-muted">22:00 -
+                                                00:00am
+                                            </small></p>
+
+                                        <p class="text-center">
+                                            <a class="btn btn-secondary btn-md" href="#reserve_section"
+                                                role="button">Book
+                                                now</a>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--6th August-->
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab">
+                        <div class="card-deck flex-column flex-md-row">
+                            <div class="card">
+                                <img class="card-img-top" src="https://t0.rbxcdn.com/18e9148af10b3f25249a23a00081b433"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Spiderman</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as
+                                        a
+                                        natural lead-in to
+                                        additional
+                                        content. This content is a little bit longer.</p>
+
+                                    <div class="flex-grow-1 flex-column d-flex justify-content-end">
+                                        <p class="card-text text-center"><small class="text-muted">6:00 -
+                                                19:30pm
+                                            </small></p>
+                                        <p class="text-center">
+                                            <a class="btn btn-primary btn-md" href="#reserve_section" role="button">Book
+                                                now</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="http://www.starcentralmagazine.com/wp-content/uploads/2018/03/avengers2-150x150.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column ">
+                                    <h5 class="card-title">Avengers</h5>
+                                    <p class="card-text">This card has supporting text below as a natural
+                                        lead-in to
+                                        additional
+                                        content.
+                                    </p>
+
+                                    <div class="flex-grow-1 flex-column d-flex justify-content-end">
+                                        <p class="card-text text-center"><small class="text-muted">20:00 -
+                                                21:30pm</small>
+                                        </p>
+                                        <p class="text-center">
+                                            <a class="btn btn-primary btn-md" href="#reserve_section" role="button">Book
+                                                now</a>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://www.kodifiretvstick.com/wp-content/uploads/2016/07/deadpool-150x150.png"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column ">
+                                    <h5 class="card-title">Deadpool</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as
+                                        a
+                                        natural lead-in to
+                                        additional
+                                        content. This card has even longer content than the first to show
+                                        that
+                                        equal
+                                        height action.
+                                    </p>
+
+                                    <div class="flex-grow-1 flex-column d-flex justify-content-end">
+                                        <p class="card-text text-center"><small class="text-muted">22:00 -
+                                                00:00am
+                                            </small></p>
+
+                                        <p class="text-center">
+                                            <a class="btn btn-primary btn-md" href="#reserve_section" role="button">Book
+                                                now</a>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7th August -->
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab">
+                        <div class="card-deck flex-column flex-md-row">
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://www.gannett-cdn.com/-mm-/6c6aa23326981ae7996234390dc5ddac00c3e5ca/c=96-0-439-343/local/-/media/2018/02/27/TreasureCoast/TreasureCoast/636553275164553223-0307-ynsl-theloraxmovie.jpg?width=150&height=150&fit=crop"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column ">
+                                    <h5 class="card-title">The Lorax</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as
+                                        a
+                                        natural
+                                        lead-in to
+                                        additional
+                                        content. This content is a little bit longer.</p>
+
+                                    <div class="flex-grow-1 flex-column d-flex justify-content-end">
+                                        <p class="card-text text-center"><small class="text-muted">6:00 -
+                                                19:30pm
+                                            </small></p>
+                                        <p class="text-center">
+                                            <a class="btn btn-primary btn-md" href="#reserve_section" role="button">Book
+                                                now</a>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="https://avatarfiles.alphacoders.com/273/thumb-27373.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column ">
+                                    <h5 class="card-title">Despicable me</h5>
+                                    <p class="card-text">This card has supporting text below as a natural
+                                        lead-in to
+                                        additional
+                                        content.
+                                    </p>
+
+                                    <div class="flex-grow-1 flex-column d-flex justify-content-end">
+                                        <p class="card-text text-center"><small class="text-muted">20:00 -
+                                                21:30pm</small>
+                                        </p>
+                                        <p class="text-center">
+                                            <a class="btn btn-primary btn-md" href="#reserve_section" role="button">Book
+                                                now</a>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="data:image/jpeg;base64,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"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Kung Fu Panda</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as
+                                        a
+                                        natural
+                                        lead-in to
+                                        additional
+                                        content. This card has even longer content than the first to show
+                                        that
+                                        equal
+                                        height
+                                        action.
+                                    </p>
+
+                                    <div class="flex-grow-1 flex-column d-flex justify-content-end">
+                                        <p class="card-text text-center"><small class="text-muted">22:00
+                                                -
+                                                00:00am
+                                            </small></p>
+
+                                        <p class="text-center">
+                                            <a class="btn btn-primary btn-md" href="#reserve_section" role="button">Book
+                                                now</a>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8th august -->
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab">
+
+                        <div class="card-deck flex-column flex-md-row">
+                            <div class="card">
+                                <img class="card-img-top" src=" https://t0.rbxcdn.com/18e9148af10b3f25249a23a00081b433"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Toy Story 3</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as
+                                        a
+                                        natural
+                                        lead-in to
+                                        additional
+                                        content. This content is a little bit longer.</p>
+
+                                    <div class="flex-grow-1 flex-column d-flex justify-content-end">
+                                        <p class="card-text text-center"><small class="text-muted">6:00 -
+                                                19:30pm
+                                            </small></p>
+                                        <p class="text-center">
+                                            <a class="btn btn-primary btn-md" href="#reserve_section" role="button">Book
+                                                now</a>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://www.gannett-cdn.com/presto/2019/03/21/USAT/d3d5fbc7-202f-4d6b-b65e-666df8e4691b-1TomHanks_ForrestGump.JPG?crop=1279,1279,x0,y83&width=150&height=150&fit=bounds"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column ">
+                                    <h5 class="card-title">Forest Gump</h5>
+                                    <p class="card-text">This card has supporting text below as a natural
+                                        lead-in to
+                                        additional
+                                        content.
+                                    </p>
+
+                                    <div class="flex-grow-1 flex-column d-flex justify-content-end">
+                                        <p class="card-text text-center"><small class="text-muted">20:00 -
+                                                21:30pm</small>
+                                        </p>
+                                        <p class="text-center">
+                                            <a class="btn btn-primary btn-md" href="#reserve_section" role="button">Book
+                                                now</a>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://www.geeksofdoom.com/GoD/img/2008/09/2008-09-12-iron_man_poster-150x150.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Ironman</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as
+                                        a
+                                        natural
+                                        lead-in to
+                                        additional
+                                        content. This card has even longer content than the first to show
+                                        that
+                                        equal
+                                        height
+                                        action.
+                                    </p>
+
+                                    <div class="flex-grow-1 flex-column d-flex justify-content-end">
+                                        <p class="card-text text-center"><small class="text-muted">22:00 -
+                                                00:00am
+                                            </small></p>
+
+                                        <p class="text-center">
+                                            <a class="btn btn-primary btn-md" href="#reserve_section" role="button">Book
+                                                now</a>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!--News, possible slides or animations-->
+    <div class="bg-dark py-5 text-dark h-100vh" id="news">
+        <div class="container">
+            <h2 class="text-center text-light mb-5">
+                Latest News!
+            </h2>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    Film Festival awards to be held in Paris
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                            ante.
+                        </p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
+                                Title</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header">
+                    Brooklyn Arts community
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                            ante.
+                        </p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
+                                Title</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Media and Film Workshops to be held
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                            ante.
+                        </p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
+                                Title</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Showtimes add more shows/plays animation include background -->
+    <!-- Navs -->
+
+
+
+
+    <!-- About Section
+
+
+
+
+    <div class="bg-image text-dark mb-0 h-100vh d-flex flex-column space-between py-5"
+        style="background-image:url(https://image.freepik.com/free-photo/fantastic-blue-sky_1203-1929.jpg)">
+
+
+        <h2 class=" text-center "> Find us </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4  text-center">
+
+                    <h4>
+                        Where located at Brooklyn bridge park, there are several routes you can take to get to
+                        us
+                    </h4>
+
+                    <img class="card-img-top"
+                        src="https://brooklynbridgepark.s3.amazonaws.com/static/img/share-icons/color.jpg?1549913118 ">
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div> -->
+
+    <!-- https://brooklynbridgepark.s3.amazonaws.com/static/img/share-icons/color.jpg?1549913118 -->
+
+
+
+    <!-- Registration Form -->
+    <div class="bg-light text-dark">
+        <div class="container py-5" id="reserve_section">
+            <h2 class="text-center mb-5">Sign up for Tickets Today</h2>
+            <form>
+                <div class="form-row d-flex justify-content-center">
+                    <div class="form-group col-md-8">
+
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Name">
+                    </div>
+                </div>
+                <div class="form-row d-flex justify-content-center">
+                    <div class="form-group col-md-4">
+                        <select id="inputDates" class="form-control">
+                            <option selected>Choose Dates</option>
+                            <option>05/08/2019</option>
+                            <option>06/08/2019</option>
+                            <option>07/08/2019</option>
+                            <option>08/08/2019</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <select id="InputFilms" class="form-control">
+                            <option selected>Select Films</option>
+                            <option> Dark Knight </option>
+                            <option>Her</option>
+                            <option>The Lorax </option>
+                            <option>The Incredibles</option>
+                            <option>Spiderman</option>
+                            <option>Avengers</option>
+                            <option>Deadpool</option>
+                            <option>Toy Story</option>
+                            <option>Despicable me</option>
+                            <option>Kung fu Panda</option>
+                            <option>Forest Gump</option>
+                            <option>Ironman</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="form-row d-flex justify-content-center">
+                    <div class="form-group col-md-4">
+                        <select id="inputTime" class="form-control">
+                            <option selected>Choose time slot</option>
+                            <option>18:00-19:30</option>
+                            <option>19:30-21:00</option>
+                            <option>21:00-22:30 </option>
+                            <option>22:30-00:00</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <select id="inputTickets" class="form-control">
+                            <option selected>Tickets</option>
+                            <option> 1 </option>
+                            <option> 2</option>
+                            <option> 3 </option>
+                            <option> 4 </option>
+                            <option> 5 </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row d-flex justify-content-center">
+                    <!-- justify-content-end-->
+                    <div class="form-group col-md-8">
+                        <input type="text" class="form-control" id="inputCity" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-row d-flex justify-content-center">
+                    <!-- justify-content-end-->
+                    <div class="form-group col-md-5">
+                        <button type="submit" class="  btn btn-block btn-outline-primary send-button">
+                            Book</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <div class="bg-dark">
+        <div class="container text-light">
+            <footer class="py-5">
+                <div class=" row d-flex bd-highlight">
+                    <div class="col-md-4">
+                        <h5 class="border-bottom pb-2 d-inline-block">
+                            Where & When
+                        </h5>
+                        <li>Brooklyn Bridge Park</li>
+                        <li>5th - 8th August(6pm - midnight) </li>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="border-bottom pb-2 d-inline-block">
+                            Brooklyn News
+                        </h5>
+                        <div class="text-left">
+                            <a href="mailto:someone@example.com">Brooklyn’s news </a>
+                        </div>
+                        <div class="text-left">
+                            <a href="https://www.brooklynbridgepark.org/">Brooklyn Bridge Park’s</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="border-bottom pb-2 d-inline-block">
+                            Contact us
+                        </h5>
+                        <p> 277 Greenwich Street <br> Bronx, NY 12201 <br>
+                            788-222-9939
+                        </p>
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter-square"></i>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- spider man  -->
+    <!-- https://heroichollywood.com/wp-content/uploads/2019/06/Spider_Man_Far_From_Home_Tom_Holland_IMAX_Poster.jpg -->
+
+    <!--   
+       https://farm4.staticflickr.com/3318/3219874303_134538d190_b.jpg 
+        https://upload.wikimedia.org/wikipedia/en/2/26/One_Flew_Over_the_Cuckoo%27s_Nest_poster.jpg
+    https://upload.wikimedia.org/wikipedia/commons/7/79/Sundance_Film_Festival.jpg
+
+    https://static1.squarespace.com/static/59ec161180bd5ee92ad36c5a/t/5c072868c2241b2bf0e25ec7/1543972978189/Rooftop_Movies_2018_090.jpg?format=2500w
+
+    https://www.beanbagsrus.com.au/blog/wp-content/uploads/2018/09/rooftop-cinemas-outdoor-beanbags.jpg
+
+    https://rooftopfilmclub.com/wp-content/uploads/2018/03/Bussey-3-1080x650.jpg
+
+    https://images-na.ssl-images-amazon.com/images/I/51WG6GXWSCL._SY445_.jpg -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
